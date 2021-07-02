@@ -44,7 +44,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", function (req, res) {
-  res.sendFile(process.cwd() + "/views/index.html");
+  res.json({ message: "Home Page - Hi" });
 });
 
 // Your first API endpoint
